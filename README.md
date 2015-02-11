@@ -2,7 +2,7 @@
 ### Understanding Services with $q
 Now returning to our project where we are pulling user profiles, we've made some good progress. We can now make real life API requests for data using $http (AJAX requests)! 
 
-But what happens if we want to have a bit more granular control over our code. Sometimes you'll want to manipulate your data before you send it over to the controller. That's where $q comes into play! 
+But what happens if we want to have a bit more granular control over our code? Sometimes you'll want to manipulate your data before you send it over to the controller. That's where $q comes into play! 
 
 $q allows us to hold off on sending our data over until we're ready. It's fairly simple. All we need to do is edit our service.
 
@@ -21,7 +21,7 @@ app.service('mainService', function($http, $q) {
 });
 ```
 
-- Once injected we can begin using it by adding a deffered variable to handle it
+- Once injected we can begin using it by using a `deferred` variable to reference our newly created deferred object
 
 ``` javascript
 var app = angular.module('userProfiles');
